@@ -43,7 +43,7 @@
   @font-face {
     font-family: 'poppinsregular';
     src: url('components/fonts/poppins-regular-webfont.woff2') format('woff2'),
-         url('components/fonts/fonts/poppins-regular-webfont.woff') format('woff');
+         url('components/fonts/poppins-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   

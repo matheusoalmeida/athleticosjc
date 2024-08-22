@@ -8,6 +8,212 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/fonts.css">
 </head>
+    
+    <style>
+        /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    line-height: 1.6;
+    background-image: url('components/images/01.png');
+    background-size: 100% 100%;
+    animation: gradientBG 5s ease infinite;
+    color: #000000;
+}
+
+/* Animação do gradiente 
+@keyframes gradientBG {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}/*
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.profile-container {
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    
+}
+
+.text-container h1 {
+    font-family: 'poppinssemibold';
+    font-size: 21px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    
+    
+}
+
+.text-container h2 {
+    font-family: 'poppinsregular';
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    
+}
+
+.text-container p {
+    font-family: 'poppinsregular';
+    font-size: 18px;
+    color: #ffffff;
+    
+    
+}
+
+/* Botão do WhatsApp */
+.whatsapp-button {
+    
+    background: #25D366;
+    border-radius: 50%;
+    padding: 15px;
+    transition: background 0.3s;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Ajuste o tamanho do ícone */
+    width: 60px; /* Ajuste o tamanho do botão */
+    height: 60px; /* Ajuste o tamanho do botão */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.whatsapp-button:hover {
+    background: #128C7E;
+}
+
+/* Botão do Instagram */
+.insta {
+    margin-left: 5px;
+    background: #e4405f;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background 0.3s;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Ajuste o tamanho do ícone */
+    width: 60px; /* Ajuste o tamanho do botão */
+    height: 60px; /* Ajuste o tamanho do botão */
+    text-decoration: none; /* Remove sublinhado */
+}
+.insta:hover {
+    background: #e90f37;
+} 
+
+.location {
+    margin-left: 5px;
+    background: #002fff;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background 0.3s;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Ajuste o tamanho do ícone */
+    width: 60px; /* Ajuste o tamanho do botão */
+    height: 60px; /* Ajuste o tamanho do botão */
+    text-decoration: none; /* Remove sublinhado */
+}
+.location:hover {
+    background: #385af3;
+} 
+
+.social-buttons {
+    display: flex; /* Utiliza Flexbox para alinhamento horizontal */
+    justify-content: center; /* Centraliza os botões */
+    margin-top: 1px ; /* Adiciona margem para separar dos outros elementos */
+}
+        
+@font-face {
+    font-family: 'poppinsblack';
+    src: url('components/fonts/poppins-black-webfont.woff2') format('woff2'),
+         url('components/fonts/poppins-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  
+  
+  
+  @font-face {
+    font-family: 'poppinsbold';
+    src: url('components/fonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('components/fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  
+  @font-face {
+    font-family: 'poppinslight';
+    src: url('components/fonts/poppins-light-webfont.woff2') format('woff2'),
+         url('components/fonts/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  
+  @font-face {
+    font-family: 'poppinsmedium';
+    src: url('components/fonts/poppins-medium-webfont.woff2') format('woff2'),
+         url('components/fonts/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  @font-face {
+    font-family: 'poppinsregular';
+    src: url('components/fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('components/fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  @font-face {
+    font-family: 'poppinssemibold';
+    src: url('components/fonts/poppins-semibold-webfont.woff2') format('woff2'),
+         url('components/fonts/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+    </style>
 <body>
     <header>
         
